@@ -5,10 +5,10 @@ class postController {
   // private
   async showPost(req, res, next) {
     try {
-      const posts = await Post.find();
+      const doctors = await Post.find();
       res.json({
         success: true,
-        posts,
+        doctors,
       });
     } catch (error) {
       console.log(error);
