@@ -1,0 +1,72 @@
+GET http://localhost:5000/api/user/register
+
+###
+
+Post http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+
+{
+ "username" : "khanhzx",
+ "password" : "khanhzx"
+}
+
+###
+Post http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+ "username" : "khanh",
+ "password" : "khanh"
+}
+
+###
+post http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2MTM2YmM5MWQ5NDliYjM0YzRiNTc0M2EiLCJpYXQiOjE2MzA5NzcxNjl9.zu5jsMc66Ga9OgTvEB0l7p0L3BCdiCJVSckdVD4aogM
+Content-Type: application/json
+
+{
+    "title" : "Nguyen ngoc khanh test haha",
+    "description" : "Nguyen ngoc khanh test haha",
+    "url" : "http://youtube.com",
+    "status" : "LEARNED"
+}
+
+### 
+GET http://localhost:5000/api/doctor/
+
+
+### 
+
+PUT http://localhost:5000/api/posts/6138dc4765a31e35ccbcb90e
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2MTM2YmM5MWQ5NDliYjM0YzRiNTc0M2EiLCJpYXQiOjE2MzA5NzcxNjl9.zu5jsMc66Ga9OgTvEB0l7p0L3BCdiCJVSckdVD4aogM
+Content-Type: application/json
+
+{
+      "title": "Update",
+      "description": "update",
+      "url": "http://youtube.com",
+      "status": "TO LEARN"
+}
+
+###
+DELETE  http://localhost:5000/api/posts/60eb0e50dbeec826c4bdbc98
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2MGVhN2QyNTM4MjQ2NTI3NDBlZGNlNGQiLCJpYXQiOjE2MjYwMTI3Mzd9.tFrZeVYLx8GG3BGztkAdVnK_k8M1afoL_MrDBg0bsZg
+
+
+### 
+POST https://www.gachthe1s.com/doithecao
+Content-Type: application/json
+
+{
+"telco": "VIETTEL",
+"code": "5234243453433",
+"serial": "100039483748288",
+"amount": "10000",
+"_token": "79jLAY34WT1chsR5hlZUbol0rKTBjf2R12cpvONf"
+}
+
+###
+get http://localhost:5000/api/auth
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2MTM2YmM5MWQ5NDliYjM0YzRiNTc0M2EiLCJpYXQiOjE2MzA5NzcxNjl9.zu5jsMc66Ga9OgTvEB0l7p0L3BCdiCJVSckdVD4aogM
+
