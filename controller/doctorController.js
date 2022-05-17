@@ -6,10 +6,7 @@ class postController {
   async showPost(req, res, next) {
     try {
       const doctors = await Post.find();
-      res.json({
-        success: true,
-        doctors,
-      });
+      res.send(doctors);
     } catch (error) {
       console.log(error);
       res
